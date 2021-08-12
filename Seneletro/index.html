@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHL</title>
+    <title>Conta de luz</title>
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <form method="POST" action="./calcular.php">
-        <h1>Empresa PHL</h1>
-        <label for="consumoKw" >Consumo em KW/h:</label>
-        <input id="consumoKw" name="consumoKw" />
+    <form method="POST" action="calcular.php">
+        <h1>Calcular conta de luz Seneletro</h1>
+        <label for="consumo" >Consumo em KW/h:</label>
+        <input type="number" id="consumo" name="consumo" required/>
  
         <label for="nome">Nome Completo:</label>
-        <input id="nome" name="nome" />
+        <input id="nome" name="nome" required/>
  
         <label for="endereco">Endereço:</label>
-        <input id="endereco" name="endereco" />
+        <input id="endereco" name="endereco" required/>
  
         <label for="numero">Número:</label>
-        <input id="numero" name="numero" />
+        <input id="numero" name="numero" required/>
  
-        <button>Calcular</button>
+        <button>Gerar Conta</button>
     </form>
 </body>
 </html>

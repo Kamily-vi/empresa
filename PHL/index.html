@@ -9,18 +9,18 @@
 </head>
 <body>
     <form method="POST" action="viagem.php">
-        <h1>Empresa PHL</h1>
-        <label for="cidadeOrigem" >Cidade de Origem:</label>
-        <input id="cidadeOrigem" name="cidadeOrigem" />
+        <h1>CALCULAR FRETE</h1>
+        <label for="origem" >Cidade de Origem:</label>
+        <input id="origem" name="origem" required/>
  
-        <label for="cidadeDestino">Cidade de Destino:</label>
-        <input id="cidadeDestino" name="cidadeDestino" />
+        <label for="destino">Cidade de Destino:</label>
+        <input id="destino" name="destino" required/>
  
         <label for="distanciaKm">Distância em KM:</label>
-        <input id="nota2" name="nota2" />
+        <input type="number" id="distanciaKm" name="distanciaKm" required/>
  
         <label for="pedagios">Quantidade de Pedágios:</label>
-        <input id="pedagios" name="pedagios" />
+        <input type="number" id="pedagios" name="pedagios" required/>
  
         <button>Total</button>
     </form>
